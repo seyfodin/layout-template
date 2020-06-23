@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <groupId>ir.setorgandishe</groupId>
-    <artifactId>layout</artifactId>
+    <artifactId>layout-template</artifactId>
     <version>MASTER-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Setorg Layout</name>
