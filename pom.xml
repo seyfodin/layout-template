@@ -32,9 +32,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:https://sti.ut.ac.ir/gitea/worldmap/layout.git</connection>
-        <developerConnection>scm:git:https://sti.ut.ac.ir/gitea/worldmap/layout.git</developerConnection>
-        <url>https://sti.ut.ac.ir/gitea/worldmap/layout</url>
+        <connection>scm:git:https://sti.ut.ac.ir/gitea/worldmap/layout-template.git</connection>
+        <developerConnection>scm:git:https://sti.ut.ac.ir/gitea/worldmap/layout-template.git</developerConnection>
+        <url>https://sti.ut.ac.ir/gitea/worldmap/layout-template</url>
     </scm>
 
     <repositories>
