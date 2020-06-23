@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE layout-templates PUBLIC "-//Liferay//DTD Layout Templates 6.2.0//EN" "http://www.liferay.com/dtd/liferay-layout-templates_6_2_0.dtd">
+
+<layout-templates>
+	<custom>
+		<layout-template id="Layout-Column-1" name="Layout-Column-1">
+			<template-path>/Layout-Column-1.tpl</template-path>
+			<wap-template-path>/Layout-Column-1.wap.tpl</wap-template-path>
+			<thumbnail-path>/Layout-Column-1.png</thumbnail-path>
+		</layout-template>
+        <layout-template id="Layout-Column-1-10-1" name="Layout-Column-1-10-1">
+            <template-path>/Layout-Column-1-10-1.tpl</template-path>
+            <wap-template-path>/Layout-Column-1-10-1.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-1-10-1.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-2-2-2-2-2" name="Layout-Column-2-2-2-2-2">
+            <template-path>/Layout-Column-2-2-2-2-2.tpl</template-path>
+            <wap-template-path>/Layout-Column-2-2-2-2-2.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-2-2-2-2-2.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-2-8-2" name="Layout-Column-2-8-2">
+            <template-path>/Layout-Column-2-8-2.tpl</template-path>
+            <wap-template-path>/Layout-Column-2-8-2.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-2-8-2.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-2-10" name="Layout-Column-2-10">
+            <template-path>/Layout-Column-2-10.tpl</template-path>
+            <wap-template-path>/Layout-Column-2-10.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-2-10.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-3-6-3" name="Layout-Column-3-6-3">
+            <template-path>/Layout-Column-3-6-3.tpl</template-path>
+            <wap-template-path>/Layout-Column-3-6-3.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-3-6-3.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-3-9" name="Layout-Column-3-9">
+            <template-path>/Layout-Column-3-9.tpl</template-path>
+            <wap-template-path>/Layout-Column-3-9.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-3-9.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-4-8" name="Layout-Column-4-8">
+            <template-path>/Layout-Column-4-8.tpl</template-path>
+            <wap-template-path>/Layout-Column-4-8.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-4-8.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-8-4" name="Layout-Column-8-4">
+            <template-path>/Layout-Column-8-4.tpl</template-path>
+            <wap-template-path>/Layout-Column-8-4.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-8-4.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-8-4-12" name="Layout-Column-8-4-12">
+            <template-path>/Layout-Column-8-4-12.tpl</template-path>
+            <wap-template-path>/Layout-Column-8-4-12.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-8-4-12.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-9-3" name="Layout-Column-9-3">
+            <template-path>/Layout-Column-9-3.tpl</template-path>
+            <wap-template-path>/Layout-Column-9-3.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-9-3.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-10-2" name="Layout-Column-10-2">
+            <template-path>/Layout-Column-10-2.tpl</template-path>
+            <wap-template-path>/Layout-Column-10-2.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-10-2.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-12-2-10" name="Layout-Column-12-2-10">
+            <template-path>/Layout-Column-12-2-10.tpl</template-path>
+            <wap-template-path>/Layout-Column-12-2-10.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-12-2-10.png</thumbnail-path>
+        </layout-template>
+        <layout-template id="Layout-Column-12-10-2" name="Layout-Column-12-10-2">
+            <template-path>/Layout-Column-12-10-2.tpl</template-path>
+            <wap-template-path>/Layout-Column-12-10-2.wap.tpl</wap-template-path>
+            <thumbnail-path>/Layout-Column-12-10-2.png</thumbnail-path>
+        </layout-template>
+	</custom>
+</layout-templates>

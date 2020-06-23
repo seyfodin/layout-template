@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+    <groupId>ir.setorgandishe</groupId>
+    <artifactId>layout</artifactId>
+    <version>MASTER-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>Setorg Layout</name>
+
+    <properties>
+
+        <liferay.auto.deploy.dir></liferay.auto.deploy.dir>
+        <liferay.version>6.2.5</liferay.version>
+        <liferay.maven.plugin.version>6.2.10.15</liferay.maven.plugin.version>
+
+        <portlet.api.version>2.0</portlet.api.version>
+        <servlet.api.version>2.4</servlet.api.version>
+        <jsp.api.version>2.0</jsp.api.version>
+        <icu4j.version>58.2</icu4j.version>
+        <jstl.version>1.2</jstl.version>
+        <geotools.version>20.0</geotools.version>
+
+        <mplugin.liferay.version>${liferay.maven.plugin.version}</mplugin.liferay.version>
+        <mplugin.compiler.version>3.3</mplugin.compiler.version>
+        <mplugin.scm.version>1.9.4</mplugin.scm.version>
+        <mplugin.resources.version>2.5</mplugin.resources.version>
+        <mplugin.versions.version>2.2</mplugin.versions.version>
+
+        <!--	JDK VERSION	 -->
+        <jdk.version>1.8</jdk.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:https://sti.ut.ac.ir/gitea/worldmap/layout.git</connection>
+        <developerConnection>scm:git:https://sti.ut.ac.ir/gitea/worldmap/layout.git</developerConnection>
+        <url>https://sti.ut.ac.ir/gitea/worldmap/layout</url>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>StiPublic-group</id>
+            <name>Sti Public Group Maven Repository</name>
+            <url>http://repo.nsdp.ir/content/repositories/public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>satra-group</id>
+            <name>Satra Group Maven Repository</name>
+            <url>http://repo.nsdp.ir/content/groups/satra/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>osgeo</id>
+            <name>OSGeo Release Repository</name>
+            <url>https://repo.osgeo.org/repository/release/</url>
+            <snapshots><enabled>false</enabled></snapshots>
+            <releases><enabled>true</enabled></releases>
+        </repository>
+
+
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>satra-releases</id>
+            <name>Satra Releases Repository</name>
+            <url>http://repo.nsdp.ir/content/repositories/satra-release</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <id>satra-snapshots</id>
+            <name>Satra Snapshot Repository</name>
+            <url>http://repo.nsdp.ir/content/repositories/satra-snapshot</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.liferay.portal</groupId>
+                <artifactId>portal-impl</artifactId>
+                <version>${liferay.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.liferay.portal</groupId>
+                <artifactId>portal-service</artifactId>
+                <version>${liferay.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.liferay.portal</groupId>
+                <artifactId>util-bridges</artifactId>
+                <version>${liferay.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.liferay.portal</groupId>
+                <artifactId>util-taglib</artifactId>
+                <version>${liferay.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.liferay.portal</groupId>
+                <artifactId>util-java</artifactId>
+                <version>${liferay.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.portlet</groupId>
+                <artifactId>portlet-api</artifactId>
+                <version>${portlet.api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet.api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>jsp-api</artifactId>
+                <version>${jsp.api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${jstl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.web</groupId>
+                <artifactId>jstl-impl</artifactId>
+                <version>${jstl.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>servlet-api</artifactId>
+                        <groupId>javax.servlet</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>jsp-api</artifactId>
+                        <groupId>javax.servlet.jsp</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>jstl-api</artifactId>
+                        <groupId>javax.servlet.jsp.jstl</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.ibm.icu</groupId>
+                <artifactId>icu4j</artifactId>
+                <version>${icu4j.version}</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.liferay.maven.plugins</groupId>
+                    <artifactId>liferay-maven-plugin</artifactId>
+                    <version>${mplugin.liferay.version}</version>
+                    <configuration>
+                        <autoDeployDir>${liferay.auto.deploy.dir}</autoDeployDir>
+                        <liferayVersion>${liferay.version}</liferayVersion>
+                        <pluginType>layouttpl</pluginType>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${mplugin.compiler.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>${mplugin.versions.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>${mplugin.scm.version}</version>
+                    <configuration>
+                        <tag>${project.version}</tag>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${mplugin.resources.version}</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
